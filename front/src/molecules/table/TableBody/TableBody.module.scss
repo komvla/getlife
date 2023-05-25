@@ -1,0 +1,12 @@
+.wrapper {
+    td{
+        font-size: 12px;
+    }
+        tr:nth-child(even) {
+            background: #f7f7f7
+        }
+    
+        tr:nth-child(odd) {
+            background: #fff
+        }
+}

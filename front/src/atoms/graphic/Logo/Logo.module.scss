@@ -1,0 +1,22 @@
+  @import '../../../styles/general-variables.scss';
+  
+  .logo {
+      margin: .5rem 1rem;
+      font-size: 14px;
+      color: $primary-color;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: default;
+      user-select: none;
+
+      span {
+          padding: .5rem;
+          font-weight: bold;
+          color: white;
+          margin: 0 .2rem;
+          border-radius: 3px;
+          background-color: $primary-color;
+      }
+  }

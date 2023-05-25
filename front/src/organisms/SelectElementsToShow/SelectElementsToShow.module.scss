@@ -1,0 +1,22 @@
+.divWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span{
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .input{
+        max-width: 5rem;
+        min-width: 5rem;
+        font-size: 14px;
+        margin : 0 1rem 
+    }
+
+    .button{
+        padding: 0.5 1rem;
+        font-size: 14px;
+    }
+}
