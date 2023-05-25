@@ -68,7 +68,7 @@ const PageTablePosts = () => {
     !posts && loadPosts();
     !users && loadUsers();
     !numberOfCommentsInPosts && users && calculateNumberOfCommentsAndAuthors();
-  });
+  }, [users, posts, numberOfCommentsInPosts]);
 
   useEffect(() => {
     setAllDataOfTableIsSuccessfullyLoaded(

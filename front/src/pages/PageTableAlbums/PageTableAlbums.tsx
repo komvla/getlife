@@ -64,12 +64,11 @@ const PageTableAlbums = () => {
 
   const dispatch = useDispatch();
 
-useEffect(() => {
-  !albums && loadAlbums();
-  !users && loadUsers();
-  !numberOfPhotosInAlbums && users && calculateNumberOfPhotosAndAuthors();
-});
-
+  useEffect(() => {
+    !albums && loadAlbums();
+    !users && loadUsers();
+    !numberOfPhotosInAlbums && users && calculateNumberOfPhotosAndAuthors();
+  }, [users, albums, numberOfPhotosInAlbums]);
 
   useEffect(() => {
     setAllDataOfTableIsSuccessfullyLoaded(
